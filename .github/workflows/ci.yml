@@ -8,8 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
-      with:
-        go-version: '1.25.x'
-        cache: true
+        with:
+          go-version: '1.25.x'
+          cache: true
       - name: Run tests
-      run: go test ./...
+        run: go test ./...
